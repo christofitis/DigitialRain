@@ -14,7 +14,7 @@ function draw() {
     background(0);
     noStroke();
     fill(255);
-        if (random(100) < 50 ){
+        if (random(100) < 70 ){
                 let char = new Char(random(canW), 0);
                 symbols.push(char);
         }

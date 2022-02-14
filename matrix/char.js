@@ -4,7 +4,7 @@ class Char {
         this.color = "rgba(0, 255, 0, 1)"
         this.letters = "ﾊﾐﾋｰｳｼﾅﾓﾆｻﾜﾂｵﾘｱﾎﾃﾏｹﾒｴｶｷﾑﾕﾗｾﾈｽﾀﾇﾍ012345789:・.=*+-<>"
         this.char = this.letters[floor(random(this.letters.length))];
-        textSize(24);
+        textSize(48);
         this.size = textSize() + 1;
         this.moveCount = 0;
         this.tailLength = random(20, 40);

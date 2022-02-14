@@ -4,11 +4,12 @@ class Char {
         this.color = "rgba(0, 255, 0, 1)"
         this.letters = "ﾊﾐﾋｰｳｼﾅﾓﾆｻﾜﾂｵﾘｱﾎﾃﾏｹﾒｴｶｷﾑﾕﾗｾﾈｽﾀﾇﾍ012345789:・.=*+-<>"
         this.char = this.letters[floor(random(this.letters.length))];
-        textSize(12);
+        textSize(14);
         this.size = textSize() + 1;
         this.moveCount = 0;
         this.tailLength = random(20, 30);
         this.charList = [];
+        this.startColor = random(100, 255);
     }
 
     show() {
@@ -16,7 +17,7 @@ class Char {
         fill(255);
         text(this.char, this.loc.x, this.loc.y);
         for (let i = 1; i < this.tailLength; i++){
-            fill(0, map(i, 0, this.tailLength, 255, 0), 0);
+            fill(0, map(i, 0, this.tailLength, startColor, 0), 0);
             text(this.charList[i], this.loc.x, this.loc.y-this.size*i);
         }
         if (random(100) < 25) {

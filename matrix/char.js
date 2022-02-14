@@ -7,7 +7,7 @@ class Char {
         textSize(48);
         this.size = textSize() + 1;
         this.moveCount = 0;
-        this.tailLength = random(20, 40);
+        this.tailLength = random(1, 2);
         this.charList = [];
     }
 

@@ -17,7 +17,7 @@ class Char {
         fill(255);
         text(this.char, this.loc.x, this.loc.y);
         for (let i = 1; i < this.tailLength; i++){
-            fill(0, map(i, 0, this.tailLength, startColor, 0), 0);
+            fill(0, map(i, 0, this.tailLength, this.startColor, 0), 0);
             text(this.charList[i], this.loc.x, this.loc.y-this.size*i);
         }
         if (random(100) < 25) {

@@ -4,10 +4,10 @@ class Char {
         this.color = "rgba(0, 255, 0, 1)"
         this.letters = "ﾊﾐﾋｰｳｼﾅﾓﾆｻﾜﾂｵﾘｱﾎﾃﾏｹﾒｴｶｷﾑﾕﾗｾﾈｽﾀﾇﾍ012345789:・.=*+-<>"
         this.char = this.letters[floor(random(this.letters.length))];
-        textSize(48);
+        textSize(18);
         this.size = textSize() + 1;
         this.moveCount = 0;
-        this.tailLength = random(1, 2);
+        this.tailLength = random(20, 30);
         this.charList = [];
     }
 
